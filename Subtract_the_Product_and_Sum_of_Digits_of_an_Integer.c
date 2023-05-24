@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
     int n,s=0,m=1,i,r;
@@ -12,4 +12,5 @@ int main()
     }
     i=m-s;
     printf("%d",i);
+    
 }
