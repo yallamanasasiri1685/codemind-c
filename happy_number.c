@@ -1,20 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    int n,m,r=0;
+    int n,r,s=0;
     scanf("%d",&n);
     while(n)
     {
-        m=n%10;
-        r=r+m*m;
-        n=n/10;
-        if(n==0 && r>9)
+        r=n%10;
+        s+=r*r;
+        n/=10;
+        if(n==0 && s>9)
         {
-            n=r;
-            r=0;
+            n=s;
+            s=0;
         }
     }
-    if(r!=1)
+    if(s!=1)
     {
         printf("False");
     }
