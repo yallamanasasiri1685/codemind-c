@@ -11,11 +11,11 @@ int sort(int *v,int n)
         for(k=0;k<n-1;k++)
         {
             if(v[k]>v[k+1])
-            {
-                t=v[k+1];
-                v[k+1]=v[k];
-                v[k]=t;
-            }
+        	{
+            	t=v[k+1];
+            	v[k+1]=v[k];
+            	v[k]=t;
+        	}
         }
     }
     t=0;
