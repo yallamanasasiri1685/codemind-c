@@ -1,29 +1,29 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    int n,s=0;
-    scanf("%d",&n);
-    while(n!=1)
+    int v,k=0;
+    scanf("%d",&v);
+    while(v!=1)
     {
-        if(n%2==0)
+        if(v%2==0)
         {
-            n=n/2;
+            v/=2;
         }
-        else if(n%3==0)
+        else if(v%3==0)
         {
-            n=n/3;
+            v/=3;
         }
-        else if(n%5==0)
+        else if(v%5==0)
         {
-            n=n/5;
+            v/=5;
         }
         else
         {
-            s++;
+            k++;
             break;
         }
     }
-    if(s!=0)
+    if(k!=0)
     {
         printf("Not Ugly Number");
     }
